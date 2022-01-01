@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+        .card{
+            width: 300px;
+            height: 325px;
+            background-color: crimson;
+            border: 2px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card p{
+            font-family: monospace;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* Tienes que poner "3" poruq cuenta los hijos del <div>, y el primero es el <img> */
+        .card p:nth-child(3){
+            font-size: 20px;
+            color: rgb(0, 35, 150);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Laptop and coffee">
+            <p>Follow your passions</p>
+            <p>Mine: Coding</p>
+        </div>
+    </section>
+</body>
+</html>
